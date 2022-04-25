@@ -82,7 +82,7 @@ class BlogController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'description' => 'required',
+            // 'description' => 'required',
         ]);
   
         $blog->update($request->all());
